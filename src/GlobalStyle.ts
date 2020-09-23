@@ -2,10 +2,12 @@ import styled, {
   createGlobalStyle,
   GlobalStyleComponent,
   DefaultTheme,
-} from 'styled-components';
+} from "styled-components";
 // import  from 'styled-components';
-export const GlobalStyle = createGlobalStyle`
-@import url("https://www.fontzip.com/storage/2018/12/11/play-pretend/webfonts/PlayPretend.css");
+export const GlobalStyle: GlobalStyleComponent<
+  {},
+  DefaultTheme
+> = createGlobalStyle`
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -92,14 +94,10 @@ export const GlobalStyle = createGlobalStyle`
 
   `;
 
-export const MainColor = '#83D2F0';
+export const mainGradient = `linear-gradient(#e66465, #9198e5)`;
 
-export const DefaultButton = styled.button`
-  width: ${(props) => props.width};
-  height: ${(props) => props.height};
-  font-size: ${(props) => props.fontSize};
-  text-align: center;
-  color: #fff;
-  border-radius: 10rem;
-  background-color: #83d2f0;
+export const mainColor = `#D5ECFC`;
+
+export const defaultButton = styled.button`
+  background-color: ${mainColor};
 `;
