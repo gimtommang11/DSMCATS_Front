@@ -85,7 +85,7 @@ export const GlobalStyle: GlobalStyleComponent<
     font-size: 13px;
   }
 }
-
+ 
 @media screen and (max-width: 1440px) {
   html {
     font-size: 11.383px;
@@ -94,10 +94,10 @@ export const GlobalStyle: GlobalStyleComponent<
 
   `;
 
-export const mainGradient = `linear-gradient(#e66465, #9198e5)`;
+export const mainGradient = `linear-gradient(0.25turn,#FEF1E8, #A7D6F3)`;
 
-export const mainColor = `#D5ECFC`;
+export const mainColor = `#927CE8`;
 
 export const defaultButton = styled.button`
-  background-color: ${mainColor};
+  background-color: ${mainGradient};
 `;
